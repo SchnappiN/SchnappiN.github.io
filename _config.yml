@@ -59,8 +59,5 @@ grid_columns:
   two: Two
   three: Three
   four: Four
-
-
-remote_theme: vi66r/jekyll-duet
-
-theme: jekyll-theme-cayman
+  
+# remote_theme: vi66r/jekyll-duet
