@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Rafi Rizwan
+  site_title: Mengwei's
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -10,17 +10,17 @@ menu_settings:
   menu_items:
     - title: 'Projects'
       url: '/'
-    - title: 'Blog'
-      url: '/blog/'
     - title: 'About'
       url: '/about'
-    - title: 'Contact'
-      url: '/contact'
+    # - title: 'Blog'
+    #   url: '/blog/'
+    # - title: 'Contact'
+    #   url: '/contact'
 
 footer_settings:
   logo_image:
   logo_width: 200
-  footer_tagline: A Man, A Plan, A Catamaran
+  footer_tagline: My website
 
 grid_settings:
   overlay_opacity: 0.8
@@ -33,9 +33,9 @@ contact_settings:
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: 'https://www.facebook.com/jekyllthemes/'
-  twitter_url: 'https://twitter.com/jekyllthemesio'
-  instagram_url: 'http://instagram.com'
+  facebook_url: ''
+  twitter_url: ''
+  instagram_url: ''
   snapchat_url: ''
   youtube_url: ''
   google-plus_url: ''
@@ -46,8 +46,8 @@ social_settings:
   amazon_url: ''
   apple_url: ''
   android_url: ''
-  tumblr_url: 'http://tumblr.com'
-  dribbble_url: 'http://dribbble.com'
+  tumblr_url: ''
+  dribbble_url: ''
   behance_url: ''
   deviantart_url: ''
   github_url: ''
