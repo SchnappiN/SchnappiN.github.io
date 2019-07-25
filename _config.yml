@@ -62,3 +62,5 @@ grid_columns:
 
 
 remote_theme: vi66r/jekyll-duet
+
+theme: jekyll-theme-cayman
