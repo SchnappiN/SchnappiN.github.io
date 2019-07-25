@@ -29,11 +29,13 @@ featured_image: '/images/demo/demo-square.jpg'
 
 比如说把上面的改为：
 
+```markdown
 <div class="gallery" data-columns="3">
 	<img src="/images/folder1/pic1.jpg">
 	<img src="/images/folder1/pic2.jpg">
 	<img src="/images/folder1/pic2.jpg">
 </div>
+```
 
 最后文件的内容：
 
