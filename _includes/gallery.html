@@ -1,5 +1,7 @@
-<ul class="image-gallery">
-  {% for file in include.files %}
-  <li><img src="{{ file }}"/></li>
-  {% endfor %}
-</ul>
+<script src="/res/spotlight.bundle.js"></script>
+
+{% for file in include.files %}
+<a class="spotlight" href="{{file}}">
+  <img src="{{file}}">
+</a>
+{% endfor %}
