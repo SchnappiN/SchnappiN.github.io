@@ -1,7 +1,15 @@
-<script src="/res/spotlight.bundle.js"></script>
+<style>
+  .spotlight>img {
+    margin: 30px;
+    height: 300px;
+    display: inline-block;
+  }
+</style>
 
+<div>
 {% for file in include.files %}
-<a class="spotlight" href="{{file}}">
+<a class="spotlight" href="{{file}}" data-animation="fade" data-autohide="false">
   <img src="{{file}}">
 </a>
 {% endfor %}
+</div>
