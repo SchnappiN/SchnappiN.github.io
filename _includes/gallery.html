@@ -1,18 +1,27 @@
 <style>
-  .spotlight>img {
-    margin: 30px;
-    height: 300px;
-    display: inline-block;
+  .spotlight {
+    margin: auto;
+  }
+  #gallery-box-{{include.id}}>.spotlight>img {
+    margin: 1vw;
+    /* height: 400px; */
+    width: {{include.width}}vw;
+    display: block;
   }
   #spotlight.menu {
     transform: none;
     -webkit-transform: none;
   }
+  #gallery-box-{{include.id}} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 </style>
 
-<div>
+<div id="gallery-box-{{include.id}}">
 {% for file in include.files %}
-<a class="spotlight" href="{{file}}" data-animation="fade" data-autohide="false">
+<a class="spotlight" href="{{file}}" data-animation="fade">
   <img src="{{file}}">
 </a>
 {% endfor %}
