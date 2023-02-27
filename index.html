@@ -21,12 +21,12 @@ featured_image: /images/social.jpg
 
 		{% for project in site.projects reversed %}
 
-		<div class="portfolio-item">
+		<div class="portfolio-item" style="background-image: url('{{ project.featured_image  }}');">
 
 			<a class="portfolio-item__link" href="{{ project.url }}">
 
 				<div class="portfolio-item__image">
-					<img src="{{ project.featured_image  }}" alt="{{ project.title }}">
+					<!-- <img src="{{ project.featured_image  }}" alt="{{ project.title }}"> -->
 				</div>
 
 				<div class="portfolio-item__content">

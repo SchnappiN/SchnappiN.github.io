@@ -9,17 +9,32 @@
 }
 
 .portfolio-wrap {
-	
+	margin-left: 10%;
 }
 
 .portfolio-item {
 	position: relative;
-	padding: $grid-spacing/2;
 	float: left;
-	width: 50%;
+
+	margin: 0.1em;
+	width: 40vw;
+	height: 40vw;
+
+	@include mq(tabletl) {
+		margin: 0.5em;
+		width: 20vw;
+		height: 20vw;
+	}
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
 }
 
 .portfolio-item__link {
+	min-height: 100%;
+	min-width: 100%;
 	position: relative;
 	display: block;
 
@@ -36,7 +51,10 @@
 }
 
 .portfolio-item__image {
-	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	object-fit: none; /* Do not scale the image */
+	object-position: center; /* Center the image within the element */
 }
 
 .portfolio-item__content {
