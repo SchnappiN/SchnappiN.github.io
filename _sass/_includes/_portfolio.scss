@@ -20,6 +20,8 @@
 	width: 40vw;
 	height: 40vw;
 
+	border-radius: 10%;
+
 	@include mq(tabletl) {
 		margin: 0.5em;
 		width: 20vw;

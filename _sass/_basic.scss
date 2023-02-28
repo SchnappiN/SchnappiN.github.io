@@ -382,10 +382,10 @@ section {
 	}
 
 	@include mq(tabletl) {
-		max-width: 65%;
+		max-width: 80%;
 	}
 
 	@include mq(laptop) {
-		max-width: 60%;
+		max-width: 80%;
 	}
 }

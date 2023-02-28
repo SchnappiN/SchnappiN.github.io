@@ -20,9 +20,22 @@
 </style>
 
 <div id="gallery-box-{{include.id}}">
+{% if include.files %}
 {% for file in include.files %}
 <a class="spotlight" href="{{file}}" data-animation="fade">
   <img src="{{file}}">
 </a>
 {% endfor %}
+{% endif %}
+
+{% if include.path %}
+{% for image in site.static_files %}
+{% if image.path contains include.path %}
+<a class="spotlight" href="{{image.path}}" data-animation="fade">
+  <img src="{{image.path}}">
+</a>
+{% endif %}
+{% endfor %}
+{% endif %}
+
 </div>
