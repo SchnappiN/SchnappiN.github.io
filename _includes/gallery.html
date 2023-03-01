@@ -31,9 +31,13 @@
 {% if include.path %}
 {% for image in site.static_files %}
 {% if image.path contains include.path %}
+{% if image.path contains "webp" %}
+{% unless image.path contains "thumbnail" %}
 <a class="spotlight" href="{{image.path}}" data-animation="fade">
   <img src="{{image.path}}">
 </a>
+{% endunless %}
+{% endif %}
 {% endif %}
 {% endfor %}
 {% endif %}
