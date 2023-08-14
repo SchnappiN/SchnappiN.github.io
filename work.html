@@ -1,0 +1,50 @@
+---
+layout: default
+title: Main Page
+description: First thing first.
+featured_image: /images/social.jpg
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<p>Welcome to Schnappi's Graffiti Kingdom٩(๑^o^๑)۶</p>
+
+	</div>
+
+</section>
+
+<section class="portfolio">
+
+	<div class="content-wrap portfolio-wrap">
+
+		{% for project in site.projects %}
+		
+		{% if project.tags contains 'work' %}
+
+		<div class="portfolio-item" style="background-image: url('{{ project.featured_image  }}');">
+
+			<a class="portfolio-item__link" href="{{ project.url }}">
+
+				<div class="portfolio-item__image">
+					<!-- <img src="{{ project.featured_image  }}" alt="{{ project.title }}"> -->
+				</div>
+
+				<div class="portfolio-item__content">
+					<div class="portfolio-item__info">
+						<h2 class="portfolio-item__title">{{ project.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+		{% endif %}
+
+		{% endfor %}
+
+	</div>
+
+</section>

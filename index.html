@@ -21,6 +21,9 @@ featured_image: /images/social.jpg
 
 		{% for project in site.projects %}
 
+		{% unless project.tags contains 'work' %}
+		{% unless project.hidden %}
+
 		<div class="portfolio-item" style="background-image: url('{{ project.featured_image  }}');">
 
 			<a class="portfolio-item__link" href="{{ project.url }}">
@@ -39,6 +42,8 @@ featured_image: /images/social.jpg
 			</a>
 
 		</div>
+		{% endunless %}
+		{% endunless %}
 
 		{% endfor %}
 
